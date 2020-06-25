@@ -4,17 +4,17 @@ An light and clear boilerplate to kickstart projects using ReactJS
 
 **Features**
 
-- ⚛️ ReactJs 16.13
-- 🎨 Write SCSS & future CSS with PostCSS + preset-env
-- 🍏 SVG icons library
-- 👁 Lint your code with ESLint & Stylelint
-- 🌈 Prettier for consistent code style
-- 🐶 Husky + lint-staged for code quality assurance
-- 🔀 Routing with react-router
-- ⚙️ Editorconfig file for consistent indents
-- 🔑 Structure for use absolute path (scripts and styles)
-- 📂 Assets management from loader 
-- 🥳 Included example app to shows how this all works together
+- ⚛️ &nbsp; ReactJs 16.13
+- 🎨 &nbsp; Write SCSS & future CSS with PostCSS + preset-env
+- 🍏 &nbsp; SVG icons library
+- 👁 &nbsp; Lint your code with ESLint & Stylelint
+- 🌈 &nbsp; Prettier for consistent code style
+- 🐶 &nbsp; Husky + lint-staged for code quality assurance
+- 🔀 &nbsp; Routing with react-router
+- ⚙️ &nbsp; Editorconfig file for consistent indents
+- 🔑 &nbsp; Structure for use absolute path (scripts and styles)
+- 📂 &nbsp; Assets management from loader 
+- 🥳 &nbsp; Included example app to shows how this all works together
 
 ## Getting started
 
@@ -24,7 +24,7 @@ Make sure you have Node and NPM installed and run:
 $ npm install
 ```
 
-### ⌨️ Development
+### Development
 
 Once all dependencies have been installed you can start development.
 
@@ -32,7 +32,7 @@ Once all dependencies have been installed you can start development.
 $ npm run dev
 ```
 
-### 🖥 Production
+### Production
 
 To run your application in production make sure to run a build first:
 
@@ -46,7 +46,7 @@ And then start you application with a provided port number (defaults to 3000 if 
 $ PORT=8080 npm run start
 ```
 
-### 🧐 Linters
+### Linters
 
 The boilerplate provides a couple of linters to help you keep an eye on code consistency.
 
@@ -90,6 +90,6 @@ To easily import modules can use absolute paths.
 To add new path, add your path to alias in `webpack config` and `babelrc` files and to sense your IDE, add your target path to `jsconfig` file.
 
 ```js
+import Home from '@pages/Home'
 import Header from '@components/Header'
-import Footer from '@utils/device'
 ```
