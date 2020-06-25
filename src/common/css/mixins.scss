@@ -1,0 +1,43 @@
+/***
+# Heading
+***/
+@mixin heading($font-size: $h1-size, $links-unstyled: true) {
+  margin: 0 0 $heading-margin;
+
+  font-size: $font-size;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+  letter-spacing: $heading-letter-spacing;
+  text-transform: $heading-text-transform;
+  color: $color-heading;
+  display: block;
+
+  font-family: $heading-font;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+/***
+# Responsive
+***/
+@mixin responsive($device: 'tablet') {
+  $bp: $bp-desktop;
+
+  @if ($device == 'mobile') {
+    $bp: $bp-mobile;
+  } @else if ($device == 'tablet') {
+    $bp: $bp-tablet;
+  }
+
+  @media only screen and #{$bp} {
+    @content;
+  }
+}

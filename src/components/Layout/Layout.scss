@@ -1,0 +1,10 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: auto;
+
+  main {
+    flex: auto;
+  }
+}

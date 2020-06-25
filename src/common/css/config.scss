@@ -1,0 +1,61 @@
+// Media query breakpoints
+$bp-mobile: '(max-width: 600px)';
+$bp-tablet: '(max-width: 1024px)';
+$bp-desktop: '(min-width: 1025px)';
+
+// Site width
+$max-site-width: 1200px;
+
+// Margins, Paddings
+$margin: 1rem;
+$section-padding: 1rem;
+
+// Icons
+$icon-size: 1.5rem; //24px
+$icon-size-small: 1rem; //16px
+$icon-size-large: 2rem; //32px
+
+// Body font
+$body-font: 'SFProDisplay', Arial, sans-serif;
+$body-font-weight: normal;
+$body-font-size: 14px;
+$body-letter-spacing: 0;
+$body-line-height: 1.4;
+$static-line-height: 24px;
+$small-font-size: 0.75rem;
+
+// Heading font
+$heading-font: $body-font;
+$heading-font-weight: bold;
+$heading-line-height: 1.3;
+$heading-letter-spacing: 0;
+$heading-text-transform: none;
+$heading-margin: $margin;
+
+$h1-size: 20px;
+$h2-size: 18px;
+$h3-size: 16px;
+$h4-size: $h3-size;
+$h5-size: $h3-size;
+$h6-size: $h3-size;
+
+// Links
+$link-decoration: false;
+$link-font-weight: inherit;
+
+// General colors
+$color-white: #fff;
+$color-gray: #999;
+$color-gray-1: #232933;
+$color-gray-2: #424750;
+$color-gray-3: #62666d;
+$color-gray-4: #81858b;
+$color-light-gray-1: #b0b3b6;
+$color-light-gray-2: #d0d1d3;
+$color-light-gray-3: #eff0f1;
+$color-blue: #026ad8;
+$color-light-blue: #59cfff;
+
+// Font colors
+$color-body: #030a17;
+$color-heading: $color-body;

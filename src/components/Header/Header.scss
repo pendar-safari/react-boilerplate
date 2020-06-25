@@ -1,0 +1,56 @@
+@import 'config';
+
+.header {
+  background: $color-white;
+  padding: $margin 0;
+
+  > * {
+    margin: 0;
+
+    > * {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    color: $color-blue;
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin-right: $margin;
+    padding: 4px;
+    background: #ececec;
+    border-radius: 50%;
+  }
+
+  nav {
+    direction: rtl;
+
+    > ul {
+      margin: 0;
+
+      > li {
+        display: inline-block;
+        list-style: none;
+        line-height: $static-line-height;
+        margin-left: $margin * 2;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        a {
+          color: $color-blue;
+        }
+      }
+    }
+  }
+}

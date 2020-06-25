@@ -4,7 +4,7 @@ An light and clear boilerplate to kickstart projects using ReactJS
 
 **Features**
 
-- ⚛️ reactJs 16.13
+- ⚛️ ReactJs 16.13
 - 🎨 Write SCSS & future CSS with PostCSS + preset-env
 - 🍏 SVG icons library
 - 👁 Lint your code with ESLint & Stylelint

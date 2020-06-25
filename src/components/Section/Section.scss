@@ -1,0 +1,9 @@
+@import 'config';
+
+.section {
+  > * {
+    max-width: $max-site-width;
+    margin: 0 auto;
+    padding: 0 $section-padding;
+  }
+}

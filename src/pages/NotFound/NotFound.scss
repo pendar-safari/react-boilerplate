@@ -1,0 +1,15 @@
+@import 'config';
+
+.not-found {
+  text-align: center;
+  margin-top: 12%;
+
+  h1 {
+    font-size: 150px;
+    margin-bottom: 0;
+  }
+
+  p {
+    color: $color-light-gray-1;
+  }
+}

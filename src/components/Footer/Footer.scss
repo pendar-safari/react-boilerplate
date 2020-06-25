@@ -1,0 +1,32 @@
+@import 'config';
+
+#footer {
+  background: $color-light-gray-3;
+  padding: $section-padding 0;
+  margin-top: $margin;
+
+  > section {
+    margin: 0;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .socials {
+    > * {
+      margin-right: $margin / 2;
+    }
+  }
+
+  .copywrite {
+    color: $color-light-gray-1;
+    font-size: $small-font-size;
+
+    > span {
+      margin-left: $margin / 2;
+    }
+  }
+}

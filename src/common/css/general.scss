@@ -1,0 +1,124 @@
+@import 'config';
+@import 'mixins';
+@import 'fonts';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-weight: $body-font-weight;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  letter-spacing: $body-letter-spacing;
+  color: $color-body;
+  word-wrap: break-word;
+  font-family: $body-font;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Root element layout
+:global {
+  #Root {
+    display: flex;
+    min-height: 100%;
+  }
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading($h1-size, false);
+}
+
+h2 {
+  font-size: $h2-size;
+}
+
+h3 {
+  font-size: $h3-size;
+}
+
+h4 {
+  font-size: $h4-size;
+}
+
+h5 {
+  font-size: $h5-size;
+}
+
+h6 {
+  font-size: $h6-size;
+}
+
+p {
+  display: block;
+  margin: 0 0 $margin;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 $margin ($margin * 2);
+}
+
+dl {
+  margin: 0 0 $margin;
+
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    margin: 0 0 0 $margin;
+  }
+}
+
+q,
+blockquote {
+  quotes: '“' '”' '‘' '’';
+}
+
+q:before {
+  content: open-quote;
+}
+
+q:after {
+  content: close-quote;
+}
+
+code {
+  word-wrap: break-word;
+}
+
+pre code {
+  word-wrap: normal;
+}
+
+abbr {
+  cursor: help;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+figure {
+  margin: 0 0 $margin;
+  outline: 0;
+}

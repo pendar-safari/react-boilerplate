@@ -1,0 +1,45 @@
+module.exports = {
+  extends: [
+    'eslint-config-airbnb',
+    'prettier',
+    'prettier/react',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+  ],
+  plugins: ['react', 'prettier'],
+  env: {
+    node: true,
+    es6: true,
+    browser: true,
+  },
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 6,
+    allowImportExportEverywhere: true,
+  },
+  rules: {
+    'spaced-comment': 'off',
+    'no-console': 'warn',
+    'consistent-return': 'off',
+    'func-names': 'off',
+    'object-shorthand': 'off',
+    'no-process-exit': 'off',
+    'no-param-reassign': 'off',
+    'no-return-await': 'off',
+    'no-underscore-dangle': 'off',
+    'class-methods-use-this': 'off',
+    'prefer-destructuring': ['error', { object: true, array: false }],
+    'no-unused-vars': ['error', { argsIgnorePattern: 'req|res|next|val' }],
+    semi: 'off',
+    'object-curly-spacing': [2, 'always'],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/namespace': ['error', { allowComputed: true }],
+    'import/order': 'off',
+    'react/prop-types': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      'babel-module': {},
+    },
+  },
+}
