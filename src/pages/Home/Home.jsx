@@ -1,37 +1,32 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import Section from '@components/Section/Section'
 import css from './Home.scss'
 import Image from '@assets/img/developer.svg'
+import Skeleton from '@components/Skeleton/Skeleton'
+
+const Info = lazy(() => {
+  return import('./Info')
+})
+
+const Loader = () => (
+  <>
+    <Skeleton type="H1" width="30%" />
+    <Skeleton type="H2" width="50%" />
+    <br />
+    <Skeleton type="line" width="20%" />
+    <br />
+    <Skeleton count={11} />
+    <br />
+    <Skeleton width="160px" height="50px" />
+  </>
+)
 
 const Home = () => (
   <Section className={css.home}>
     <div className={css.content}>
-      <h1>
-        <span>Light & Clear</span>
-        <br />
-        <span>ReactJs Boilerplate</span>
-      </h1>
-
-      <p className={css.info}>
-        - ReactJs 16.13 <br />
-        - Write SCSS & future CSS with PostCSS + preset-env <br />
-        - SVG icons library <br />
-        - Lint your code with ESLint & Stylelint <br />
-        - Prettier for consistent code style <br />
-        - Husky + lint-staged for code quality assurance <br />
-        - Routing with react-router <br />
-        - Editorconfig file for consistent indents <br />
-        - Structure for use absolute path (scripts and styles) <br />
-        - Assets management from loader <br />
-        - Included example app to shows how this all works together <br />
-      </p>
-
-      <a
-        className={css.button}
-        href="https://github.com/pendar-safari/react-boilerplate"
-      >
-        more about
-      </a>
+      <Suspense fallback={Loader()}>
+        <Info />
+      </Suspense>
     </div>
 
     <Image className={css.image} />
