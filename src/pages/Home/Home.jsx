@@ -8,12 +8,12 @@ const Info = lazy(() => {
   return import('./Info')
 })
 
-const Loader = () => (
+const Loader = (
   <>
-    <Skeleton type="H1" width="30%" />
-    <Skeleton type="H2" width="50%" />
+    <Skeleton type="H1" width="35%" />
+    <Skeleton type="H2" width="60%" />
     <br />
-    <Skeleton type="line" width="20%" />
+    <Skeleton type="line" width="25%" />
     <br />
     <Skeleton count={11} />
     <br />
@@ -24,7 +24,7 @@ const Loader = () => (
 const Home = () => (
   <Section className={css.home}>
     <div className={css.content}>
-      <Suspense fallback={Loader()}>
+      <Suspense fallback={Loader}>
         <Info />
       </Suspense>
     </div>

@@ -8,7 +8,7 @@ $color-2: rgba(0, 0, 0, 0.12);
   width: 100%;
   margin-bottom: $margin / 2;
   background-color: $color-1;
-  min-height: 10px;
+  height: 10px;
   border-radius: 3px;
   animation: Skeleton-pulse 1.5s ease-in-out 0.5s infinite;
 
