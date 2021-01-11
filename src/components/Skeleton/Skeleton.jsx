@@ -34,24 +34,23 @@ const Skeleton = (props) => {
   )
 
   const content = () => {
-    let domElement
+    const getElement = () => {
+      switch (type) {
+        case 'listItem':
+          return listItem
 
-    switch (type) {
-      case 'listItem':
-        domElement = listItem
-        break
+        case 'H1':
+          return generateChild({ height: '50px' })
 
-      case 'H1':
-        domElement = generateChild({ height: '50px' })
-        break
+        case 'H2':
+          return generateChild({ height: '30px' })
 
-      case 'H2':
-        domElement = generateChild({ height: '30px' })
-        break
-
-      default:
-        domElement = generateChild()
+        default:
+          return generateChild()
+      }
     }
+
+    let domElement = getElement()
 
     if (count) {
       const dataArray = []
